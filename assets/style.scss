@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  background-color: #777;
+  .login-button button {
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: #333;
+      color: white;
+    }
+  }
+  .login-window {
+    margin: 50px;
+    background-color: #999;
+    width: fit-content;
+    border-radius: 6px;
+    display: none;
+    .list ul {
+      list-style: none;
+      li input[type="text"] {
+        width: 300px;
+        font-size: 23px;
+        padding: 5px 10px;
+        border-radius: 6px;
+        border: none;
+        margin: 10px;
+      }
+      li.checkbox {
+        color: white;
+      }
+      li input[type="checkbox"] {
+        border-radius: 6px;
+        margin: 10px;
+      }
+      li button {
+        font-size: 25px;
+        padding: 5px 10px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        transform: translateX(calc(-50% - 10px));
+        left: 50%;
+        margin: 20px;
+        &:hover {
+          background-color: #333;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.show {
+  display: block !important;
+}
